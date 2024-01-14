@@ -62,11 +62,12 @@ export async function fetchCommunityDetails(id: string) {
       },
     ]);
 
+    console.log('yes its coming here');
+
     return communityDetails;
   } catch (error) {
     // Handle any errors
     console.error("Error fetching community details:", error);
-    throw error;
   }
 }
 
